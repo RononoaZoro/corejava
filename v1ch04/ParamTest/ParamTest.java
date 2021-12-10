@@ -58,32 +58,32 @@ public class ParamTest
       System.out.println("End of method: x=" + x.getName());
       System.out.println("End of method: y=" + y.getName());
    }
-}
+//}
 
-class Employee // simplified Employee class
-{
-   private String name;
-   private double salary;
-
-   public Employee(String n, double s)
-   {
-      name = n;
-      salary = s;
-   }
-
-   public String getName()
-   {
-      return name;
-   }
-
-   public double getSalary()
-   {
-      return salary;
-   }
-
-   public void raiseSalary(double byPercent)
-   {
-      double raise = salary * byPercent / 100;
-      salary += raise;
-   }
+//class Employee // simplified Employee class
+//{
+//   private String name;
+//   private double salary;
+//
+//   public Employee(String n, double s)
+//   {
+//      name = n;
+//      salary = s;
+//   }
+//
+//   public String getName()
+//   {
+//      return name;
+//   }
+//
+//   public double getSalary()
+//   {
+//      return salary;
+//   }
+//
+//   public void raiseSalary(double byPercent)
+//   {
+//      double raise = salary * byPercent / 100;
+//      salary += raise;
+//   }
 }

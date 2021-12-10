@@ -18,6 +18,9 @@ public class PairTest2
             LocalDate.of(1910, 6, 22), // K. Zuse
          };
       Pair<LocalDate> mm = ArrayAlg.minmax(birthdays);
+//      String[] str = {"a","b"};
+//      ArrayAlg.<String>minmax(str);
+//      ArrayAlg.<String>minmax("a","b");
       System.out.println("min = " + mm.getFirst());
       System.out.println("max = " + mm.getSecond());
    }
