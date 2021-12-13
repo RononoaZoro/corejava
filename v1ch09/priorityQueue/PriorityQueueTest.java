@@ -12,10 +12,12 @@ public class PriorityQueueTest
 {
    public static void main(String[] args)
    {
+      //compareTo方法
+      //add的时候，总是将比较之后最小的放到第一个，remove的时候，总是删除比较之后最小的一个
       PriorityQueue<LocalDate> pq = new PriorityQueue<>();
+      pq.add(LocalDate.of(1903, 12, 3)); // J. von Neumann
       pq.add(LocalDate.of(1906, 12, 9)); // G. Hopper
       pq.add(LocalDate.of(1815, 12, 10)); // A. Lovelace
-      pq.add(LocalDate.of(1903, 12, 3)); // J. von Neumann
       pq.add(LocalDate.of(1910, 6, 22)); // K. Zuse
 
       System.out.println("Iterating over elements...");
