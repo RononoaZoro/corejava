@@ -1,6 +1,7 @@
 package unsynch;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * A bank with a number of bank accounts.
@@ -59,5 +60,13 @@ public class Bank
    public int size()
    {
       return accounts.length;
+   }
+
+   public static void main(String[] args) {
+//      Set<String> words = ConcurrentHashMap.<String>newKeySet();
+      ConcurrentHashMap<String, Object> map = new ConcurrentHashMap<>();
+      Set<String> words = map.keySet(1L);
+      words.add("java");
+      System.out.println();
    }
 }
